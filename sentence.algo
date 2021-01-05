@@ -1,0 +1,26 @@
+ALGORITHM Sentence
+VAR
+sentence : INTEGER;
+i : INTEGER;
+Nbvoy , Nbchar , Nbword : INTEGER;
+BEGIN
+WHILE (sentence [i]<>".") DO
+FOR (i=0 , i<sentence.length , i++)  DO
+IF (sentence[i]in{"a","e","i","o","u","y"}) THEN
+Nbvoy = 0;
+Nbvoy++;
+    set_instructions
+END_IF
+IF (sentence[i]>="A" && sentence[i]<="Z") THEN
+||
+(sentence[i]>="a" && sentence[i]<="z")
+Nbchar= 0;
+Nbchar++;
+END_IF
+IF (sentence[i] = " "|| sentence[i]=".") THEN
+Nbword = 0;
+Nbword++;
+END_IF
+END_FOR
+END_WHILE
+END
